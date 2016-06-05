@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TwitterApiDemo</string>
+    <string name="error_while_fetching_tweets">Error while fetching the tweets, please try again.</string>
+    <string name="error_fetching_tweets">Error while fetching tweets, pull down to retry.</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="tweets">Tweets</string>
+    <string name="no_tweets_found">No tweets found, pull down to retry.</string>
+    <string name="three_common_words">"3 common words : %s"</string>
+</resources>
