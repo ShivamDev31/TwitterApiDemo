@@ -22,9 +22,7 @@ import com.shivamdev.apidemo.main.LogToast;
 import com.shivamdev.apidemo.main.MainApplication;
 import com.shivamdev.apidemo.network.TwitterApi;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import io.nlopez.smartlocation.OnReverseGeocodingListener;
 import io.nlopez.smartlocation.SmartLocation;
@@ -45,7 +43,6 @@ public class ListFragment extends Fragment {
     private static final String TAG = ListFragment.class.getSimpleName();
     private static final String SEARCH = "q";
     private static final String COUNT = "count";
-    private static final String SEARCH_NAME = "cleartax";
     private static final int COUNT_NO = 100;
 
     // Android stuff
@@ -113,10 +110,10 @@ public class ListFragment extends Fragment {
     }
 
     private void getTweets() {
-        Map<String, Object> query = new HashMap<>();
+        /*Map<String, Object> query = new HashMap<>();
         query.put(SEARCH, SEARCH_NAME);
         query.put(COUNT, COUNT_NO);
-
+*/
         changeStatus(State.LOADING);
 
         Subscription subs = twitterApi.getRestaurantData()
