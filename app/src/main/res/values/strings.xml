@@ -6,4 +6,6 @@
     <string name="tweets">Tweets</string>
     <string name="no_tweets_found">No tweets found, pull down to retry.</string>
     <string name="three_common_words">"3 common words : %s"</string>
+    <string name="distance">"%s kms"</string>
+    <string name="loc_not_avail">Not able to fetch location</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.shivamdev.twitterapidemo;
+package com.shivamdev.apidemo;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.shivamdev.twitterapidemo.activity;
+package com.shivamdev.apidemo.activity;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -15,9 +15,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.shivamdev.twitterapidemo.R;
-import com.shivamdev.twitterapidemo.main.LogToast;
-import com.shivamdev.twitterapidemo.main.MainApplication;
+import com.shivamdev.apidemo.R;
+import com.shivamdev.apidemo.main.LogToast;
+import com.shivamdev.apidemo.main.MainApplication;
 
 /**
  * Created by shivamchopra on 04/06/16.

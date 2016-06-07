@@ -1,7 +1,7 @@
-package com.shivamdev.twitterapidemo.dagger;
+package com.shivamdev.apidemo.dagger;
 
-import com.shivamdev.twitterapidemo.network.NetworkModule;
-import com.shivamdev.twitterapidemo.network.TwitterApi;
+import com.shivamdev.apidemo.network.NetworkModule;
+import com.shivamdev.apidemo.network.TwitterApi;
 
 import javax.inject.Singleton;
 

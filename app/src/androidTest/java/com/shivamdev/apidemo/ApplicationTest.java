@@ -1,4 +1,4 @@
-package com.shivamdev.twitterapidemo;
+package com.shivamdev.apidemo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

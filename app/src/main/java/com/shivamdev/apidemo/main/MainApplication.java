@@ -1,11 +1,11 @@
-package com.shivamdev.twitterapidemo.main;
+package com.shivamdev.apidemo.main;
 
 import android.app.Application;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.shivamdev.twitterapidemo.dagger.DaggerServiceComponent;
-import com.shivamdev.twitterapidemo.dagger.ServiceComponent;
+import com.shivamdev.apidemo.dagger.DaggerServiceComponent;
+import com.shivamdev.apidemo.dagger.ServiceComponent;
 
 /**
  * Created by shivamchopra on 03/06/16.
@@ -28,13 +28,6 @@ public class MainApplication extends Application {
     public ServiceComponent component() {
         return component;
     }
-
-    /*public boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) getSystemService(getApplicationContext().CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
-    }*/
 
     public boolean isNetworkConnectedOrConnecting() {
         ConnectivityManager connectivityManager

@@ -1,4 +1,4 @@
-package com.shivamdev.twitterapidemo.twitter;
+package com.shivamdev.apidemo.restaurant;
 
 import com.google.gson.annotations.SerializedName;
 

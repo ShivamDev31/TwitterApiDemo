@@ -2,35 +2,59 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/srl_refrest_tweets"
+        android:id="@+id/srl_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:id="@+id/rl_tweets_layout"
+            android:id="@+id/rl_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/ll_tweets_layout"
+                android:id="@+id/ll_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_common_words"
+                <RelativeLayout
+                    android:id="@+id/rl_location"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="8dp"
-                    android:paddingTop="5dp"
-                    android:textSize="14sp" />
+                    android:layout_height="50dp">
+
+                    <EditText
+                        android:id="@+id/tv_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:enabled="false"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="3dp"
+                        android:singleLine="true"
+                        android:text="IBC Knowledge Park"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="15dp"
+                        android:src="@drawable/ic_loc" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black" />
 
                 <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_tweets_list"
+                    android:id="@+id/rv_list"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@+id/tv_common_words"
@@ -38,7 +62,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_error_twitter"
+                android:id="@+id/ll_error"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -62,7 +86,7 @@
             </LinearLayout>
 
             <ProgressBar
-                android:id="@+id/pb_tweets_loader"
+                android:id="@+id/pb_loader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"

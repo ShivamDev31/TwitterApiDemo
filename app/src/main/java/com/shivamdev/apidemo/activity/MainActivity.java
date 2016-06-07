@@ -1,9 +1,9 @@
-package com.shivamdev.twitterapidemo.activity;
+package com.shivamdev.apidemo.activity;
 
 import android.os.Bundle;
 
-import com.shivamdev.twitterapidemo.R;
-import com.shivamdev.twitterapidemo.twitter.TwitterFragment;
+import com.shivamdev.apidemo.R;
+import com.shivamdev.apidemo.restaurant.ListFragment;
 
 public class MainActivity extends BaseActivity {
 
@@ -21,7 +21,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void addTwitterFragment() {
-        TwitterFragment twitterFragment = TwitterFragment.newInstance();
-        getSupportFragmentManager().beginTransaction().add(R.id.ll_tweets_fragment, twitterFragment, FRAG_TAG).commit();
+        ListFragment listFragment = ListFragment.newInstance();
+        getSupportFragmentManager().beginTransaction().add(R.id.ll_tweets_fragment, listFragment, FRAG_TAG).commit();
     }
 }

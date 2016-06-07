@@ -1,4 +1,4 @@
-package com.shivamdev.twitterapidemo.network;
+package com.shivamdev.apidemo.network;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

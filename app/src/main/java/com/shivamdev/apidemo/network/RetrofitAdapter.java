@@ -1,6 +1,6 @@
-package com.shivamdev.twitterapidemo.network;
+package com.shivamdev.apidemo.network;
 
-import com.shivamdev.twitterapidemo.Constants;
+import com.shivamdev.apidemo.Constants;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -12,9 +12,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by shivamchopra on 04/06/16.
  */
 public class RetrofitAdapter {
-    private static final String TAG = RetrofitAdapter.class.getSimpleName();
-    private static final String AUTHORIZATION = "Authorization";
-
     private Retrofit retrofit;
     private OkHttpClient okHttpClient;
     private static RetrofitAdapter adapter;
@@ -37,7 +34,7 @@ public class RetrofitAdapter {
 
     private Retrofit retrofit() {
         return new Retrofit.Builder()
-                .baseUrl(Constants.TWITTER_SEARCH_URL)
+                .baseUrl(Constants.BASE_URL)
                 .client(getOkHttpClient())
                 .addConverterFactory(GsonConverterFactory.create(GsonUtil.getInstance().getGson()))
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())

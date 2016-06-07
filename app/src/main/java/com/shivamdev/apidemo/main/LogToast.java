@@ -1,4 +1,4 @@
-package com.shivamdev.twitterapidemo.main;
+package com.shivamdev.apidemo.main;
 
 import android.content.Context;
 import android.util.Log;
