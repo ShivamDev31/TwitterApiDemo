@@ -9,19 +9,19 @@ public class MainActivity extends BaseActivity {
 
     // Constants
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String FRAG_TAG = "tweet_tag";
+    private static final String FRAG_TAG = "tag";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initializeToolbar(getString(R.string.tweets), true);
-        addTwitterFragment();
+        initializeToolbar(getString(R.string.where_to_eat), true);
+        addListFragment();
     }
 
-    private void addTwitterFragment() {
+    private void addListFragment() {
         ListFragment listFragment = ListFragment.newInstance();
-        getSupportFragmentManager().beginTransaction().add(R.id.ll_tweets_fragment, listFragment, FRAG_TAG).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.ll_list_fragment, listFragment, FRAG_TAG).commit();
     }
 }
